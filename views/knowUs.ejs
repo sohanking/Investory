@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <% include partials/head %>
+	<link rel="stylesheet" href="stylesheets/updated.css">
+</head>
+<body>
+
+
+<!--The fixed header of the page    -->
+    <header>
+        
+        <nav class="navbar navbar-default" data-spy="affix" >
+            <div class="container-fluid">
+                <div class="navbar-header logo">
+                    <a href="/" class="tooltips">
+                             <img class="img-responsive" id="investory" src="images/investoryLogo.png" alt="" />
+                    <img class="img-responsive logo-icon" src="images/logoIcon.png" alt="" />
+                    <img class="img-responsive logo-icon-blue" src="images/logoIconBlue.png" alt="" />
+                        
+                        <span>
+       
+       Our name is inspired by two words invest and story.<br />
+                        
+        Here we help you write your financial story with honest investment  advice.<br />
+        Our brand mascot is "Tory" the frog.
+        <br />
+        <br />
+       <em>Why a frog?</em> <read>Read more</read>
+    </span>
+                        
+                    </a>
+                </div>
+                
+                 <div class="collapse navbar-collapse" id="myNavbar">
+                                   <ul class="nav navbar-nav">
+                              <li><a href="KnowUs">Know us</a></li>
+                        <li><a  href="Pricing">Pricing</a></li>
+                        <li><a  href="GoalSelection">Get Started</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right login-btn">
+                             <button type="" class="btn btn-lg moodNav login" data-toggle="modal" data-target="#loginModal" > Login</button> 
+                        
+                        <div class="row avatar">
+                            <div class="col-sm-8"><p class="name">Preety Shankar</p>
+                            <p class="role">Investory Contributor</p>
+                            </div>
+                            
+                            <div class="col-sm-4"><img src="images/avatar.png" alt="Person" width="96" height="96">
+                               <img src="images/downarrow.png" ></div>
+                        
+                        </div>                        
+                    </ul>
+                                       
+                </div>
+                            <div class="moodGoals">
+            
+                                <img src="images/back%20arrow.png" alt="">
+                                  
+            <div class="dropdown selectMood">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Moods
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Broke" href="#">Feeling BROKE</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Nerdy" href="#">Feeling NERDY</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Rich" href="#">Feeling RICH</a></li>
+<!--      <li role="presentation" class="divider"></li>-->
+      <li role="presentation"><a role="menuitem" tabindex="5" id="Responsible" href="#">Feeling RESPONSIBLE</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="6" id="Loved" href="#">Feeling LOVED</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="7" id="Social" href="#">Feeling SOCIAL</a></li>
+    </ul>
+  </div>
+                    
+                                <div class="dropdown selectGoal">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Goals
+    <span class="caret"></span></button>
+       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+           
+               <li role="presentation"><a role="menuitem" tabindex="7" id="Broke" goal="0" href="#">Emergency</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="8" id="Broke" goal="1" href="#">Medical corpus</a></li>
+           
+    
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="0" href="#">Education</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="1" href="#">Gadget</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="6" id="Nerdy" goal="2" href="#">Build a book collection</a></li>
+           
+           
+            <li role="presentation"><a role="menuitem" tabindex="9" id="Rich"  goal="0" href="#">Crorepati</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="10" id="Rich"  goal="1" href="#">Fancy car</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="11" id="Rich"  goal="2" href="#">Double the money</a></li>
+           
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Responsible" goal="0" href="#">Childs Education</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Responsible" goal="1" href="#">Retirement</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Responsible" goal="2" href="#">Home</a></li>
+   
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="0" href="#">Marriage</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="1" href="#">HoneyMoon</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="2" href="#">Ann gifts</a></li>
+  
+          
+              <li role="presentation"><a role="menuitem" tabindex="12"  id="Social" goal="0" href="#">Holiday</a></li>
+           <li role="presentation"><a role="menuitem" tabindex="13"  id="Social" goal="1" href="#">World cup</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="14"  id="Social" goal="2" href="#">Concert</a></li>
+               <li role="presentation"><a role="menuitem" tabindex="15"  id="Social" goal="3" href="#">Course</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="16"  id="Social" goal="4" href="#">Fitness</a></li>
+    </ul>
+  </div>
+            
+                                
+            <img src="images/search.png" alt="">                      
+        </div>
+            
+                <hr> 
+            </div>
+        </nav>
+        
+
+        
+    </header>
+
+    
+      <!-- Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Login</h2>
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                               <button id="login" type="" class="btn btn-lg login "  > Login </button> 
+                            <button type="" class="btn btn-lg sign-up" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Sign Up</button>
+                            <a href="#" class="forgot" >Forgot Password?</a>
+                            <button type="" class="btn btn-lg facebook">Login with Facebook</button>
+                            <button type="" class="btn btn-lg google">Login with Google+</button>
+                                
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+  <div class="modal fade" id="signUp" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Sign Up</h2>
+						   <hr>
+                       <input type="number" class="form-control" id="num" placeholder="Mobile Number">
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                            <button type="" class="btn btn-lg login" data-dismiss="modal"> Submit </button> 
+                          
+              
+                            <button type="" class="btn btn-lg facebook">Sign through Facebook</button>
+                            <button type="" class="btn btn-lg google">Sign through Google+</button>
+                             <p><em>By clicking Sign Up you agree to the <a href="#">terms and conditions</a></em></p>   
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+  
+    
+    
+ <div class="wrapper">
+	  <div class="main">
+          
+    <section id="section1" >
+      
+     <div class="container-fluid know-us  text-center" >
+        
+      
+       
+
+          <h2 style="padding-top: 0; padding-bottom:0;">Name and Logo</h2>
+    
+          <div class="container content">
+         <div class="row rowclass">
+            
+          
+            
+           
+            
+        </div><!--row rowclass-->
+         </div><!--end of container content-->
+  
+         
+          
+         <div class="dotHr" style=" margin-left: 25%;"><!--below name and logo-->
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div><!--line below name and logo ends-->
+         <br>
+         <div class="KUNLogo"  >
+         <h6 class="KUNLogoP" >Our name is inspired by two words- invest and story.</h6>
+         <h6 class="KUNLogoP" >Here we help you write your financial story with honest investement advice.</h6>
+         <h6 class="KUNLogoP">Our brand mascot is "Tory" the frog.</h6>
+         </div>
+         
+            <div class="dotHr" style=" margin-left: 25%;">
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div>
+         
+
+          <h2 style="padding-top: 0.5em; padding-bottom: 0;" class="">
+              Why a frog?
+         </h2>
+           
+         <img class="WFrogImg"src="images/frggie1.png" width="102" height="96">
+         
+          <!-- line below WHy a frog-->
+         
+           <div class="dotHr" style=" margin-left: 25%;">
+              
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div>
+         <!-- line below WHy a frog End-->
+         
+         <!--start of why frog para-->
+          <div class="container content">
+         <div class="row KuWfRow ">
+             <div class="col-sm-3"></div>
+             
+             <div class="col-sm-3 KuWfC1" >
+                 
+                 <p >
+                 <h6 class="KuWfC1Pad" style=" ">Frogs have been a symbol of prosperity,</h6>
+                 <h6  class="KuWfC1Pad">wealth, friendship and abundance in </h6>
+                 <h6 class="KuWfC1Pad">many cultures.For the Romans, the frog</h6>
+                 <h6 class="KuWfC1Pad"> was a mascot believed to bring good luck </h6>
+                 <h6 class="KuWfC1Pad">to ones home.In many Asian cultures,</h6>
+                 <h6 class="KuWfC1Pad">the frog or toad symbolize the moon and </h6>
+                 <h6 class="KuWfC1Pad">can facilitate healing and attract</h6>
+                 <h6 class="KuWfC1Pad"> prosperity.The money toad or fortune </h6>
+                 <h6 class="KuWfC1Pad">frog is through to have been the personal </h6>
+                 <h6 class="KuWfC1Pad">pet of the Chinese god of wealth.</h6>
+           
+                 </p>
+             
+             </div><!--end of collum1-->
+              
+              
+             <div class="col-sm-3 KuWfC2"  stle="">
+                 <p >
+                 <h6 class="KuWfC2Pad">As a power animal,the frog serves to </h6>
+                 <h6 class="KuWfC2Pad">remind a person of the ever changing</h6>
+                 <h6 class="KuWfC2Pad">nature of his life and the support that can </h6>
+                 <h6 class="KuWfC2Pad">be found during of change.</h6>
+                 <h6 class="KuWfC2Pad"style="padding-top:0.65em;">Because the frog has the ability to go</h6>
+                 <h6 class="KuWfC2Pad">from water to earth,it is believed that as </h6>
+                 <h6 class="KuWfC2Pad">a power animal the frog contains the</h6>
+                 <h6 class="KuWfC2Pad">magic and properties of bothelements.</h6>
+                 <h6 class="KuWfC2Pad"style="padding-top:0.65em;">So lets get to know Tory better,shall we?</h6>
+                  
+                 </p>
+            </div><!--end of collum2-->
+             
+         <div class="col-sm-3"></div>
+           
+            
+        </div><!--row rowclass-->
+         </div><!--end of container content-End of why frog para-->
+    <br>
+   
+   <div class="dotHr" style=""><!-- Get Started-->
+         <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                 
+         
+               
+       
+      <button type="" data-toggle="modal" data-target="#signUp" class="btn btn-lg moodNav getStarted" style="    width: 8em;" > Get Started</button>
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  </div><!-- Get Started End-->
+    </div>      
+     
+       </section>
+    
+    <!--section1-->    
+      
+ 
+  <section id="section2"  class="mod-singular-section" >
+ <div class="container-fluid know-us  text-center" >
+     <img class="WInvstImg"src="images/froggie 2.png" width="102" height="86">
+         <h2 style="" class="WSHeader">Why choose Investstory?</h2>
+           
+                <div class="dotHr" style=" margin-left: 25%;"><!-- line below WHyInvest Story-->
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div><!-- line below WHy Invest Story End-->
+         
+         
+          <div class="container content"><!--start of why Invest Story-->
+         <div class="row KuWfRow "><!--Investstory row-->
+             <div class="col-sm-3"></div>
+             
+             <div class="col-sm-3 KuWfC1" >
+                 
+                 <p >
+                 <h6 class="KuWfC1Pad" style=" ">Investstory wants to make financila </h6>
+                 <h6  class="KuWfC1Pad">planning and investment transparent, </h6>
+                 <h6 class="KuWfC1Pad">easy and fun.And we want to do this</h6>
+                 <h6 class="KuWfC1Pad"> withoutcharging you any commision on </h6>
+                 <h6 class="KuWfC1Pad">the funds we recommend; without billing</h6>
+                 <h6 class="KuWfC1Pad">you a percentage of money you </h6>
+                 <h6 class="KuWfC1Pad">invest with us each year and without</h6>
+                 <h6 class="KuWfC1Pad">using jargon</h6>
+                
+                 </p>
+             
+             </div><!--end of collum1-->
+              
+              
+             <div class="col-sm-3 KuWfC2"  stle="">
+                 <p >
+                 <h6 class="KuWfC2Pad">All our advisors are highly qualified and </h6>
+                 <h6 class="KuWfC2Pad">keep your long term interest in mind.This</h6>
+                 <h6 class="KuWfC2Pad">is done by making your goals the center</h6>
+                 <h6 class="KuWfC2Pad">of our world.However you wish to live </h6>
+                 <h6 class="KuWfC2Pad">your life,we help your plan for it!</h6>
+                 <h6 class="KuWfC2Pad">
+                 We dont judge or preach.</h6>
+                 <h6 class="KuWfC2Pad">Just assist and advice like a trusted friend</h6>
+                 <h6 class="KuWfC2Pad">or expert.</h6>
+                
+                 </p>
+            </div><!--end of collum2-->
+             
+         <div class="col-sm-3"></div>
+           
+            
+        </div> <!--Investstory row end-->
+         </div><!--end of container content-End of Invest Story para-->
+      
+    
+    <!--dotted line below why InvestoryParagraphs-->
+          <div class="dotHr" style=""><!-- Get Started-->
+         <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                 
+         
+               
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  </div><!-- Get Started End--><!--Line below why InvestoryParagrapy Ends-->
+      <div class="container-fluid why-us text-center" style="    margin-top: 1%;">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-sm-3"><!--No cut-->
+                        <h2>No cut</h2>
+                        <p>We do not take any cut (in other words shortcut) from any fund house, in order to give you unbiased and honest advice.</p>
+                    </div><!--No cut Ends-->
+             <div class="col-sm-3"><!--no charges-->
+                          <h2>No charges</h2>
+                  <p>We also do not charge you based on the amount you invest; just a small monthly fee for our advisory services.</p>
+             </div><!--no charges ends-->
+             <div class="col-sm-3"><!--only direct-->
+                          <h2>Only direct</h2>
+                  <p>We recommend only direct schemes that give you much higher returns compared to retail options (which pay commissions to advisors)</p>
+             </div><!--only direct Ends-->
+             <div class="col-sm-3"><!--100%safe-->
+                          <h2>100% safe</h2>
+                  <p>Being in the industry for over 15years, we know the importance of privacy and safety of your money and data.</p>
+             </div>
+             
+        </div>
+         </div> <div class="dotHr" style=""><!-- Get Started-->
+         <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                 
+        
+       
+     
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+       <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  </div><!-- Get Started End-->
+    </div>
+    </div><!--container investoryends-->
+</section><!-- section2 ends-->
+          
+
+
+    <section id="section3"  class="mod-singular-section">
+          
+     <div class="container-fluid know-us text-center">
+    
+      <h2 style="padding-top: 0;padding-bottom:0px;" class="">Who are we</h2>
+    
+         <div class="dotHr" style=" margin-left: 25%;"><!--below who we are-->
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div> <!--line below who we are ends-->
+         
+         
+         
+          <br>      
+         <div class="WhoWeAre">
+         <h6 class="WhoWeAreP" style=""> Our parent company,International Money Matters Pvt. Ltd.(IMMPL) is a</h6>
+         <h6 class="WhoWeAreP" style="">financial advisor established in 2003, to help people achieve their goals.</h6>
+         <h6 class="WhoWeAreP" style="">Eack of our advisors and relationship managers take up the 'Certified</h6>
+         <h6 class="WhoWeAreP" style=""> Financial Planner'programme as recommended by the financial Planning</h6>
+         <h6 class="WhoWeAreP" style="">  Standard Board,India.We are also a SEBI Registered financial advisor.</h6>
+         <h6 class="WhoWeAreP" style="">    IIMPl manages assests of over Rs.750 Crores and run a risk cover of Rs.300</h6>
+         <h6 class="WhoWeAreP" style="">  Crores while advising 500+ clients from across Indian and the world including </h6>
+             <h6 class="WhoWeAreP" style="">  the US,UK,Middle East and South East Asia.</h6>
+         </div>
+             
+             
+             
+             
+        
+             
+             
+             
+              <div class="dotHr" style=" margin-left: 25%;">
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div><br>
+         
+         
+         
+          <h2 style="padding-top: 0em;padding-bottom:0px;" class="">Investory team?</h2>
+                
+              <div class="dotHr" style=" margin-left: 25%;">
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div>
+           
+         
+         
+             
+             
+             <!--line above Team-->
+        <br>
+             <br>
+        
+          <div class="avatarTestimonial avtarEdit">
+                    <img src="images/avatar.png" alt="Person" width="96" height="96" class="avtarSiaze" style="position:absolute;    height: 70px;
+                    width: 70px;"> 
+            
+                        </div>             
+                 <h4 style="font-weight:900;">Swetha Jain - <i>COO</i></h4>    
+        
+           
+    <div class="InvestTeam" style="" >
+         
+         <h6 class="InvestTeamP" style="">A BBM graduate and a CFP to boot,Swetha brings her excellent/h6>
+         <h6 class="InvestTeamP" style="">management skills to the table and is an integral part of our think tank.She</h6>
+         <h6 class="InvestTeamP" style="">spearheads "The Investory"initiative which aims to make financial avice</h6>
+             <h6 class="InvestTeamP">more accessible and fun.</h6>
+         </div>
+             
+              <div class="dotHr" style=" margin-left: 25%;">
+                  <!--below  team-->
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+    
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div> <!--line below Team-->
+        
+ 
+            
+        </div><!--container-fluid knowus text-centercontainer ends-->
+        
+ <% include partials/footer %>
+        
+    </section><!--section3-->
+
+
+        
+
+        </div>
+</div>
+
+<!--Custom Js links -->
+        
+  <script src="javascripts/TweenMax.min.js"></script>
+<script src="javascripts/TextPlugin.min.js"></script>
+         <script src="javascripts/main.js"></script>
+    <script src="javascripts/control.js" type="text/javascript"></script>
+       
+</body>
+</html>

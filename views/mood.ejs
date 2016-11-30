@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <% include partials/head %>
+</head>
+<body>
+
+
+<!--The fixed header of the page    -->
+    <header>
+        
+        <nav class="navbar navbar-default" data-spy="affix" >
+            <div class="container-fluid">
+                <div class="navbar-header logo">
+                    <a href="/" class="tooltips"><img class="img-responsive" src="images/investoryLogo.png" alt="" />
+                    <img class="img-responsive logo-icon" src="images/logoIcon.png" alt="" />
+                        <span>
+       
+       Our name is inspired by two words invest and story.<br />
+                        
+        Here we help you write your financial story with honest investment  advice.<br />
+        Our brand mascot is "Tory" the frog.
+        <br />
+        <br />
+       <em>Why a frog?</em> <read>Read more</read>
+    </span>
+                        
+                    </a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+             <ul class="nav navbar-nav mod-nav-list js-singular-nav">
+                         <li><a href="KnowUs">Know us</a></li>
+                        <li><a  href="Pricing">Pricing</a></li>
+                        <li><a  href="GoalSelection">Get Started</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right login-btn">
+                       <button type="" class="btn btn-lg moodNav login" data-toggle="modal" data-target="#loginModal" > Login</button> 
+                        
+                        <div class="row avatar">
+                            <div class="col-sm-8"><p class="name">Preety Shankar</p>
+                            <p class="role">Investory Contributor</p>
+                            </div>
+                            
+                            <div class="col-sm-4"><img src="images/avatar.png" alt="Person" width="96" height="96"></div>
+                            
+                        </div>                        
+                    </ul>
+                                       
+                </div>
+                              <div class="moodGoals">
+            
+                                <img src="images/back%20arrow.png" alt="">
+                                  
+            <div class="dropdown selectMood">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Moods
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Broke" href="#">Feeling BROKE</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Nerdy" href="#">Feeling NERDY</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Rich" href="#">Feeling RICH</a></li>
+<!--      <li role="presentation" class="divider"></li>-->
+      <li role="presentation"><a role="menuitem" tabindex="5" id="Responsible" href="#">Feeling RESPONSIBLE</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="6" id="Loved" href="#">Feeling LOVED</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="7" id="Social" href="#">Feeling SOCIAL</a></li>
+    </ul>
+  </div>
+                    
+                                <div class="dropdown selectGoal">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Goals
+    <span class="caret"></span></button>
+       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+           
+               <li role="presentation"><a role="menuitem" tabindex="7" id="Broke" goal="0" href="#">Emergency</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="8" id="Broke" goal="1" href="#">Medical corpus</a></li>
+           
+    
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="0" href="#">Education</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="1" href="#">Gadget</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="6" id="Nerdy" goal="2" href="#">Build a book collection</a></li>
+           
+           
+            <li role="presentation"><a role="menuitem" tabindex="9" id="Rich"  goal="0" href="#">Crorepati</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="10" id="Rich"  goal="1" href="#">Fancy car</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="11" id="Rich"  goal="2" href="#">Double the money</a></li>
+           
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Responsible" goal="0" href="#">Childs Education</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Responsible" goal="1" href="#">Retirement</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Responsible" goal="2" href="#">Home</a></li>
+   
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="0" href="#">Marriage</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="1" href="#">HoneyMoon</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="2" href="#">Ann gifts</a></li>
+  
+          
+              <li role="presentation"><a role="menuitem" tabindex="12"  id="Social" goal="0" href="#">Holiday</a></li>
+           <li role="presentation"><a role="menuitem" tabindex="13"  id="Social" goal="1" href="#">World cup</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="14"  id="Social" goal="2" href="#">Concert</a></li>
+               <li role="presentation"><a role="menuitem" tabindex="15"  id="Social" goal="3" href="#">Course</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="16"  id="Social" goal="4" href="#">Fitness</a></li>
+    </ul>
+  </div>
+            
+                                
+            <img src="images/search.png" alt="">                      
+        </div>
+                 <hr />
+            </div>
+           
+        </nav>
+        
+
+        
+    </header>
+      <!-- Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Login</h2>
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                               <button id="login" type="" class="btn btn-lg login "  > Login </button> 
+                            <button type="" class="btn btn-lg sign-up" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Sign Up</button>
+                            <a href="#" class="forgot" >Forgot Password?</a>
+                            <button type="" class="btn btn-lg facebook">Login with Facebook</button>
+                            <button type="" class="btn btn-lg google">Login with Google+</button>
+                                
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+  <div class="modal fade" id="signUp" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Sign Up</h2>
+						   <hr>
+                       <input type="number" class="form-control" id="num" placeholder="Mobile Number">
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                            <button type="" class="btn btn-lg login" data-dismiss="modal"> Submit </button> 
+                          
+              
+                            <button type="" class="btn btn-lg facebook">Sign through Facebook</button>
+                            <button type="" class="btn btn-lg google">Sign through Google+</button>
+                             <p><em>By clicking Sign Up you agree to the <a href="#">terms and conditions</a></em></p>   
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+  
+    <section id="section1">
+        
+ 
+     <div class="container-fluid moods text-center">
+          
+           
+         <div class="container">
+         
+             <div class="row">
+             <div class="col-md-4">
+                   <div class="frogImageMoods text-center">
+                    <img id="setMood" class="img-responsive" src="#" alt="" />
+<!--                    <img class="img-responsive" src="images/frog1.png" alt="" />-->
+                    <!--<img class="img-responsive" src="images/frog_eye.png" alt="" />-->
+                
+                    <h1 id="setMoodText">Feeling Rich</h1>
+                </div>
+                 
+                 <div class="row slider">
+            
+            
+                     <div class="photos">
+                         
+                          
+                         
+                    <div class="photosInner">
+                     
+                        <img class="change" id="Broke" src="images/smallBroke.png" alt="Home view" >
+                     
+                      <img class="change" id="Loved" src="images/smallLOVED.png" alt="Home view" >
+                     
+                      <img class="change" id="Nerdy" src="images/smallNerdy.png" alt="Home view" >
+                     
+                     <img class="change" id="Responsible" src="images/smallRESPONSIBLE.png" alt="Home view" >
+                     
+                      <img class="change" id="Rich" src="images/smallRICH.png" alt="Home view" >
+                     
+                      <img class="change" id="Social" src="images/smallSOCIAL.png" alt="Home view" >
+                     
+                     </div> 
+                         
+                 
+                     </div>
+                     <div class="slider-control">
+                         <img class="left" src="images/left.jpg" alt="Home view" >
+                        <img class="right" src="images/right.jpg" alt="Home view" >  
+                        
+                     </div>
+                          
+                    
+                 </div>
+            </div>
+                   <div class="col-md-8 selective">
+                 
+                  
+                       <ul class="pagination">
+              <li><a class="pageActive" href="#">1</a>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </li>
+      
+              <li><a id="pageActive" href="#">2</a>
+                 <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+            </li>
+              <li><a id="#" href="#">3</a>
+                 <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+            </li>
+              <li><a id="#" href="#">4</a>
+            <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                           </li>
+                                <li><a id="#" href="#">5</a>
+
+                           </li>       
+                           
+            </ul>
+                    
+                       <div class="contentMood">
+                           <p id="goalIndicator">Goal Selection</p>
+                           
+                           <div class="page1">
+                        <h2>Please select your goal</h2>
+                       <p>You can always add or change a goal after you have signed up</p>
+                       
+              <div class="col-sm-12 below">
+				  
+                      <div class="goal" id="" >
+                        <img src="images/goals/rich/Crorepati.png" mood="Rich" alt="Home view"   >
+                        <p id="mood"><span></span>Crorepati</p>
+                      </div>
+
+                                        
+                     <div class="goal" id="" > 
+                        <img src="images/goals/rich/Fancy%20Car.png" mood="Rich" alt="Home view">
+                        <p id="mood"><span></span>Fancy Car</p>
+                    </div>
+                
+                    <div class="goal" id="" >
+                        <img src="images/goals/rich/Double%20the%20money.png" mood="Rich" alt="Home view" >
+                        <p id="mood"><span></span>Double the money</p>
+                    </div>
+                  
+                  
+                </div>  
+                           
+                           
+            <div class="worksBtn">
+            
+            <div class="login-btn text-center page-buttons">
+                                 
+                <button type="" class="btn btn-lg moodNav skip" > Skip </button> 
+            </div>
+            
+           <div class="login-btn text-center page-buttons">
+                          <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                <button type="" class="btn btn-lg moodNav next" > Next </button> 
+               
+            </div>
+                       <div class="login-btn text-center page-buttons">
+                        <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                         <div></div>
+
+        
+            
+               
+            </div>
+        </div>
+                   
+    
+                           
+                       </div>
+                               <div class="page2">
+                        <h2>Education</h2>
+                       <p>I need INR ________ by ____ (Year)</p>
+                    <div class="login-btn">
+                                 
+                <button type="" class="btn btn-lg moodNav go" > Go </button> 
+                <button type="" class="btn btn-lg moodNav next page3Sub" > Next </button>
+                        <button type="" class="btn btn-lg moodNav save page3Sub" > Save </button>
+                        
+            </div>
+             <div class="dotHr">
+                  
+                  <div></div>
+                                     <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+           <div></div>
+                  <div></div>
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                     <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                         <div></div>
+
+                                   </div>
+                   <div class="page3">
+                                   <p>So, you need to invest INR 40,000 Monthly</p>
+                       <div class="table-responsive">
+                        <table class="table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Allocation percent</th>
+        <th>Amount (&#x20B9;)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Equity - Large-cap Funds</td>
+        <td>50%</td>
+        <td>4,000,00</td>
+      </tr>
+      <tr>
+        <td>Balanced - Oriented Funds</td>
+        <td>40%</td>
+        <td>4,000,00</td>
+      </tr>
+      <tr>
+       <td>Debt - Short-term Funds</td>
+        <td>50%</td>
+        <td>4,000,00</td>
+      </tr>
+    </tbody>
+  </table>
+                       </div>                 
+                                   </div>                
+                
+                                   
+                       </div>
+                           
+                           <div class="page4">
+                                   <p id="invest">I have INR 30,000 now to invest and  can invest INR 1,000 monthly</p>
+                                <h2>Risk Profiling</h2>
+                               <p><em>Risk profiling will help you choose right fund to invest in based on your comfort</em></p>
+                                <div class="dotHr">
+                  
+                  <div></div>
+                                     <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+           <div></div>
+                  <div></div>
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                     <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                         <div></div>
+
+                                   </div>
+                               <br/>
+                               <div class="selectMode">
+                                              <div class="dotHr">
+                  
+                  <button id="Conservative" type="" class="btn btn-lg moodNav" > Conservative </button> 
+                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>                     
+              <div></div>
+                  <div></div>   
+                <div></div>                     
+                <div></div>
+                  <div></div>  
+                                                  
+							<button id="Moderate" type="" class="btn btn-lg moodNav" > Moderate </button> 
+           <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>                     
+              <div></div>
+                  <div></div>   
+                <div></div>                     
+                <div></div>
+                  <div></div>  
+                                            
+                                                  
+							<button id="Aggressive" type="" class="btn btn-lg moodNav" > Aggressive </button> 
+              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>                     
+              <div></div>
+                  <div></div>   
+                <div></div>                     
+                <div></div>
+                  <div></div>  
+                                         
+                            <button id="dontKnow" type="" class="btn btn-lg moodNav ">I don't know</button>
+   
+
+                                   </div>  
+                              
+                                   
+                                   
+                               </div>
+                              
+                               <div class="sub-page4">
+                                
+                           <div class="container sliderRiskProfile">
+            <div id="riskHeight">
+                
+             <button class="accordion">
+                 <div class="col-sm-1 btn btn-default btn-circle">1</div>
+                 <div class="col-sm-11">Compared to others, how do you rate your willingness to take financial risks?
+                 </div>
+                
+             </button>
+<div class="riskProfiling">
+     <p id="mood"><span></span>Low risk taker</p>
+    <p id="mood"><span></span>Average risk taker</p>
+    <p id="mood"><span></span>High risk taker</p>
+</div>
+                
+                             <button class="accordion">
+                 <div class="col-sm-1 btn btn-default btn-circle">2</div>
+                 <div class="col-sm-11">When you think of the word 'risk' in a financial context, which of the following words come to mind first?
+                 </div>
+                
+             </button>
+<div class="riskProfiling">
+     <p id="mood"><span></span>Danger</p>
+    <p id="mood"><span></span>Uncertainity</p>
+    <p id="mood"><span></span>Opportunity</p>
+</div>
+                
+                                             <button class="accordion">
+                 <div class="col-sm-1 btn btn-default btn-circle">3</div>
+                 <div class="col-sm-11">When faced with a major financial decision, are you most concerned about the possible losses or the possible gains?
+                 </div>
+                
+             </button>
+<div class="riskProfiling">
+     <p id="mood"><span></span>Always the possible losses</p>
+    <p id="mood"><span></span>Usually the possible losses</p>
+    <p id="mood"><span></span>Always the possible gains</p>
+</div>
+                
+                                                             <button class="accordion">
+                 <div class="col-sm-1 btn btn-default btn-circle">4</div>
+                 <div class="col-sm-11">Think of the average return you would expect to earn on an investment portfolio over a fixed deposit the next ten years.
+                 </div>
+                
+             </button>
+<div class="riskProfiling">
+     <p id="mood"><span></span>About the same rate as from bank fixed deposits</p>
+    <p id="mood"><span></span>About one and half time the rate from bank fixed deposits</p>
+    <p id="mood"><span></span>About twice the rate from bank fixed deposits</p>
+</div>
+                
+                                                             <button class="accordion">
+                 <div class="col-sm-1 btn btn-default btn-circle">5</div>
+                 <div class="col-sm-11">Which of the following statement best describes your attitude about the next six month's performance of the investment?
+                 </div>
+                
+             </button>
+<div class="riskProfiling">
+     <p id="mood"><span></span>I would have a concern with any sort of loss</p>
+    <p id="mood"><span></span>I'd get concerned if the loss was greater than 10%</p>
+    <p id="mood"><span></span>I wouldn't worry about losses in that time frame</p>
+</div>                
+                               </div>  
+                               
+<!--
+                                   <div class="login-btn">
+                                  
+             
+                        <button type="" class="btn btn-lg moodNav done " > Done </button>
+                      <button type="" class="btn btn-lg moodNav save " > Save </button>
+                                   
+                               </div>
+                               
+-->
+                               
+                               
+           
+                               
+                               
+                                   </div>       
+                           
+                      
+                                                                        
+            <div class="worksBtn">
+            
+            <div class="login-btn text-center page-buttons">
+                                 
+                <button type="" class="btn btn-lg moodNav done " > Done </button>
+            </div>
+            
+           <div class="login-btn text-center page-buttons">
+                          <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                <button type="" class="btn btn-lg moodNav save " > Save </button>
+               
+            </div>
+                       <div class="login-btn text-center page-buttons">
+                          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div> <div></div> <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                         <div></div>
+            
+               
+            </div>
+        </div>
+                           
+                           
+                           </div> 
+                           </div>
+                           
+                           
+                           
+                        <div class="page5">
+                            <h2>Your Plan</h2>
+<!--                               <p>Age: 21 Annual income: &#x20B9;24,00,000</p>--><p>So, you need to invest INR 40,000 Monthly</p>
+                            
+                                                   <div class="table-responsive">
+                        <table class="table">
+    <thead>
+      <tr>
+  
+        <th>Category</th>
+        <th>Allocation %</th>
+        <th>Amount (&#x20B9;)</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+  
+        <td>Equity - Large-cap Funds</td>
+        <td>50%</td>
+        <td>4,000,00</td>
+      </tr>
+      <tr>
+  
+      <td>Balanced - Oriented Funds</td>
+        <td>40%</td>
+        <td>4,000,00</td>
+      </tr>
+      <tr>
+
+          <td>Debt - Short-term Funds</td>
+        <td>50%</td>
+        <td>4,000,00</td>
+      </tr>
+
+    </tbody>
+  </table>
+                       </div>
+                           <div class="dotHr"> 
+                               <div class="login-btn">
+                                 
+                <button type="" data-toggle="modal" data-target="#signUp" class="btn btn-lg moodNav signUp" > Sign Up </button> 
+                           </div>
+                               
+                            <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                                   <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                            <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                                   <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                               <div></div>
+                                         <div></div>
+                               <div></div>
+                 
+                            </div>
+                           </div>
+                       <p id="btm">If you wish to speak to us,call us on xxxxxxxxxx</p> 
+                       
+                       
+                        
+            </div>
+             </div>
+         
+         </div>
+         
+         
+        </div>
+    </section>
+    
+    
+    
+<% include partials/footer %>
+
+<!--Custom Js links -->
+        
+  <script src="javascripts/TweenMax.min.js"></script>
+<script src="javascripts/TextPlugin.min.js"></script>
+         <script src="javascripts/main.js"></script>
+    <script src="javascripts/control.js" type="text/javascript"></script>
+       
+</body>
+</html>

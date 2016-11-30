@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <% include partials/head %>
+		<link rel="stylesheet" href="stylesheets/updated.css">
+</head>
+<body>
+
+<!--The fixed header of the page    -->
+    <header>
+        
+        <nav class="navbar navbar-default" data-spy="affix" >
+            <div class="container-fluid">
+                <div class="navbar-header logo">
+                    <a href="/" class="tooltips">
+       <img class="img-responsive" id="investory" src="images/investoryLogo.png" alt="" />
+                    <img class="img-responsive logo-icon" src="images/logoIcon.png" alt="" />
+                    <img class="img-responsive logo-icon-blue" src="images/logoIconBlue.png" alt="" />
+                        
+                        <span>
+       
+       Our name is inspired by two words invest and story.<br />
+                        
+        Here we help you write your financial story with honest investment  advice.<br />
+        Our brand mascot is "Tory" the frog.
+        <br />
+        <br />
+       <em>Why a frog?</em> <read>Read more</read>
+    </span>
+                        
+                    </a>
+                </div>
+                
+                 <div class="collapse navbar-collapse" id="myNavbar">
+                                   <ul class="nav navbar-nav">
+                         <li><a href="KnowUs">Know us</a></li>
+                        <li><a  href="Pricing">Pricing</a></li>
+                        <li><a  href="GoalSelection">Get Started</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right login-btn">
+                             <button type="" class="btn btn-lg moodNav login" data-toggle="modal" data-target="#loginModal" > Login</button> 
+                        
+                        <div class="row avatar">
+                            <div class="col-sm-8"><p class="name">Preety Shankar</p>
+                            <p class="role">Investory Contributor</p>
+                            </div>
+                            
+                            <div class="col-sm-4"><img src="images/avatar.png" alt="Person" width="96" height="96">
+                               <img src="images/downarrow.png" ></div>
+                        
+                        </div>                        
+                    </ul>
+                                       
+                </div>
+                            <div class="moodGoals">
+            
+                                <img src="images/back%20arrow.png" alt="">
+                                  
+            <div class="dropdown selectMood">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Moods
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Broke" href="#">Feeling BROKE</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Nerdy" href="#">Feeling NERDY</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Rich" href="#">Feeling RICH</a></li>
+<!--      <li role="presentation" class="divider"></li>-->
+      <li role="presentation"><a role="menuitem" tabindex="5" id="Responsible" href="#">Feeling RESPONSIBLE</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="6" id="Loved" href="#">Feeling LOVED</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="7" id="Social" href="#">Feeling SOCIAL</a></li>
+    </ul>
+  </div>
+                    
+                                <div class="dropdown selectGoal">
+    <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Your Goals
+    <span class="caret"></span></button>
+       <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+           
+               <li role="presentation"><a role="menuitem" tabindex="7" id="Broke" goal="0" href="#">Emergency</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="8" id="Broke" goal="1" href="#">Medical corpus</a></li>
+           
+    
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="0" href="#">Education</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="4" id="Nerdy" goal="1" href="#">Gadget</a></li>
+             <li role="presentation"><a role="menuitem" tabindex="6" id="Nerdy" goal="2" href="#">Build a book collection</a></li>
+           
+           
+            <li role="presentation"><a role="menuitem" tabindex="9" id="Rich"  goal="0" href="#">Crorepati</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="10" id="Rich"  goal="1" href="#">Fancy car</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="11" id="Rich"  goal="2" href="#">Double the money</a></li>
+           
+      <li role="presentation"><a role="menuitem" tabindex="1" id="Responsible" goal="0" href="#">Childs Education</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="2" id="Responsible" goal="1" href="#">Retirement</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="3" id="Responsible" goal="2" href="#">Home</a></li>
+   
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="0" href="#">Marriage</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="1" href="#">HoneyMoon</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="5" id="Loved" goal="2" href="#">Ann gifts</a></li>
+  
+          
+              <li role="presentation"><a role="menuitem" tabindex="12"  id="Social" goal="0" href="#">Holiday</a></li>
+           <li role="presentation"><a role="menuitem" tabindex="13"  id="Social" goal="1" href="#">World cup</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="14"  id="Social" goal="2" href="#">Concert</a></li>
+               <li role="presentation"><a role="menuitem" tabindex="15"  id="Social" goal="3" href="#">Course</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="16"  id="Social" goal="4" href="#">Fitness</a></li>
+    </ul>
+  </div>
+            
+                                
+            <img src="images/search.png" alt="">                      
+        </div>
+            
+                <hr> 
+            </div>
+        </nav>
+        
+
+        
+    </header>
+
+    
+      <!-- Modal -->
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Login</h2>
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                               <button id="login" type="" class="btn btn-lg login "  > Login </button> 
+                            <button type="" class="btn btn-lg sign-up" data-toggle="modal" data-target="#signUp" data-dismiss="modal">Sign Up</button>
+                            <a href="#" class="forgot" >Forgot Password?</a>
+                            <button type="" class="btn btn-lg facebook">Login with Facebook</button>
+                            <button type="" class="btn btn-lg google">Login with Google+</button>
+                                
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal -->
+  <div class="modal fade" id="signUp" role="dialog">
+    <div class="modal-dialog modal-sm">
+          <!-- Modal content-->
+      <div class="modal-content">
+                
+            <div class="modal-body">
+         
+                <form class="form-horizontal">
+                           <h2>Sign Up</h2>
+						   <hr>
+                       <input type="number" class="form-control" id="num" placeholder="Mobile Number">
+						   
+							<input type="email" class="form-control" id="email" placeholder="Email">
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+							<input type="password" class="form-control" id="pwd" placeholder="Password">
+                            <button type="" class="btn btn-lg login" data-dismiss="modal"> Submit </button> 
+                          
+              
+                            <button type="" class="btn btn-lg facebook">Sign through Facebook</button>
+                            <button type="" class="btn btn-lg google">Sign through Google+</button>
+                             <p><em>By clicking Sign Up you agree to the <a href="#">terms and conditions</a></em></p>   
+                            
+                 </form>    
+            </div>
+                
+      </div>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+	  <div class="main">
+          
+
+    <section id="section1"  class="mod-singular-section" >
+      
+     <div class="container-fluid how-it-works  text-center" >
+        
+      
+       
+
+          <h2 style="padding-top: 0;" class="">Pricing Packages</h2>
+         <h4 style="margin-bottom: 0;">Choose your pack</h4>
+          <div class="container content">
+         <div class="row rowclass">
+            
+            <div class="col-sm-4 shrinkleft1 " >
+             <h2 class="h2hstyle" >No cut</h2>
+                <p  class="shrinkpara" >We get no cut from fund houses,so our recommendations are unbiased.</p>
+             </div>
+             <div class="col-sm-4 shrinkleft">
+                          <h2 class="h2hstyle" >No charges</h2>
+                  <p class="shrinkpara">We do not charge you any percentage for the amount you invest.</p>
+             </div>
+             <div class="col-sm-4  ">
+                          <h2 class="h2hstyle" >Only direct</h2>
+                  <p class="shrinkpara">See how direct schemes give you much higher returns than retail schemes</p>
+             </div>
+            
+        </div>
+         </div>
+  <p style="    margin-top: 0em;">I need INR ______ by ____ (Year). <button type=""  class="btn btn-lg moodNav go" > Go</button></p> 
+         
+         
+           <div class="row" style="    margin-top: -2.5%; margin-bottom: 0">
+      
+    <div class="col-sm-4">
+        <a href="#" class="tooltips"> 
+                  <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>Good Plan</h2>
+              <div id="pricingDot">
+                <div class="pDot"></div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <h2>99 &#x20B9;</h2>
+          <ul id="Gp">
+              <li id="Gp1">Goal based reports</li>
+              <li id="Gp2">Profit & Loss report</li>
+              <li id="Gp3">Capital gains report</li>
+               <li id="Gp4">Monthly newsletter</li>
+             
+        
+            </ul>
+        </div>
+
+      </div> 
+            
+            <span id="GpData">
+       
+       Quick reports on world events like  Brexit,<br />
+     Union budget, Elections etc
+   
+    </span>  </a>
+
+    </div> 
+      
+    <div class="col-sm-4">
+          <a href="#" class="tooltips"> 
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>Better Plan</h2>
+            <div id="pricingDot">
+                <div class="pDot"></div>
+            </div>
+        </div>
+        <div class="panel-body" >
+             <h2>199 &#x20B9;</h2>
+          <ul id="Bp">
+              
+              <li id="bp1">All "Good Plan" features</li>
+              <li id="bp2">Monthly call with advisor</li>
+              <li id="bp3">Bi- annual online meeting</li>
+    
+        
+            </ul>
+        </div>
+
+      </div> 
+        
+                    
+            <span id="BpData">
+       
+       Quick reports on world events like  Brexit,<br />
+     Union budget, Elections etc
+   
+    </span>  </a>
+    </div> 
+      
+    <div class="col-sm-4">
+        <a href="#" class="tooltips"> 
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2>Best Plan</h2>
+              <div id="pricingDot">
+                <div class="pDot"></div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <h2>499 &#x20B9;</h2>
+          <ul id="Bstp" >
+               <li id="Bstp1">All "Better Plan" features</li>
+               <li id="Bstp2">Transaction report</li>
+              <li id="Bstp3">Sector- wise investment reports</li>
+              <li id="Bstp4">Asset allocation reports</li>
+               <li id="Bstp5">Fund- wise reports</li>
+               <li id="Bstp6">Investory insights</li>
+               <li id="Bstp7">Product research</li>
+              <li id="Bstp8">Event Analysis</li>
+            </ul>
+        </div>
+
+      </div> 
+                    <span id="BstpData">
+       
+       Quick reports on world events like  Brexit,<br />
+     Union budget, Elections etc
+   
+    </span>  </a>
+    </div> 
+         </div>  
+         <div class="dotHr" style=" margin-left: 22%;">
+         
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+       
+      <button type="" data-toggle="modal" data-target="#signUp" class="btn btn-lg moodNav pay" > Pay</button>
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+         
+               <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+      
+  
+  </div>
+         
+           </section>
+        
+          
+
+
+    <section id="section3"  class="mod-singular-section">
+        
+  
+     <div class="container-fluid how-it-works text-center">
+        
+            <h2 class="" style="padding-top:0;">How it works</h2>
+         
+                
+                                <ul class="pagination">
+              <li><a href="">1</a>
+                 <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+            
+                </li>
+      
+              <li><a href="">2</a>
+                 <div></div>
+
+                 
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                    <div></div>
+                  <div></div>
+                  <div></div>
+                   <div></div>
+                  <div></div>
+            </li>
+              <li><a href="">3</a>
+                 <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+            </li>
+              <li><a href="">4</a>
+
+                           </li>    
+                           
+            </ul>
+        
+
+        
+        
+                    <div class="row">
+                <div class="column PAN" style="top:2em">
+                   
+                    <img src="images/frog_pan.png" alt="Sign up with PAN number" width="65%" style="top:0"><br>
+                    <p  style="top:2.5em">Sign up with <br />PAN number</p>
+                </div>
+                
+                <div class="column Package" >
+                   
+                    <img src="images/frog_jump.png" alt="Choose a Package" width="65%"><br>
+                    <p style="margin-left: 2.8em;">Choose a <br />Package</p>
+                </div>
+                
+                <div class="column investing" style="top:1.5em">
+                    
+                    <img src="images/frog_coin.png" alt="Start investing" width="70%"><br>
+                    <p>Start <br /> investing</p>
+                </div>
+                
+                <div class="column Withdraw" style="top:3em">
+                    
+                    <img src="images/frog_note.png" alt="Withdraw anytime" width="90%" style="left:0; top: 0.5em"><br>
+                    <p>Withdraw <br /> anytime</p>
+                </div>
+                        
+            </div>
+        
+<div class="dotHr"  style="margin-top: -2.5em;">
+         
+
+                  <div></div>
+                  <div></div>
+          <div></div>
+               <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              <div></div>
+              <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+           <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          
+                  <div></div>
+                  <div></div>
+         
+                  <div></div>
+                  <div></div>
+                  <div></div>
+         
+         <button type="" data-toggle="modal" data-target="#signUp" class="btn btn-lg moodNav signUp" style="float: left;" > Sign Up</button> 
+              
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+               <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              <div></div>
+              <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              <div></div>
+
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+              
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+           <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+          <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                              <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                                    <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                    
+              
+         </div>
+            
+        </div>
+        
+        
+ <% include partials/footer %>
+    </section>
+
+
+        
+
+  
+    
+          </div>
+          
+      </div>
+    
+     
+<!--Custom Js links -->
+        
+  <script src="javascripts/TweenMax.min.js"></script>
+<script src="javascripts/TextPlugin.min.js"></script>
+         <script src="javascripts/main.js"></script>
+    <script src="javascripts/control.js" type="text/javascript"></script>
+       
+   
+</body>
+</html>

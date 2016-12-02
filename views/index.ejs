@@ -145,12 +145,16 @@
 
         <div class="feelingCircularMenu">
 				<ul>
-				    <li id="Broke"><a href="#">feeling<br />BROKE</a></li>
+					 <% moods.forEach(function(msgObj){ %>
+    <li id="<%= msgObj.name %>" ><a href="#">feeling<br /><%= msgObj.name %></a></li>
+  <% }) %>
+					
+				  <!--  <li id="Broke"><a href="#">feeling<br />BROKE</a></li>
 				    <li id="Nerdy"><a href="#" >feeling<br />NERDY</a></li>
                     <li id="Rich"><a href="#" >feeling<br />RICH</a></li>
                     <li id="Responsible"><a href="#" >feeling<br />RESPONSIBLE</a></li>
                     <li id="Loved"><a href="#" >feeling<br />LOVED</a></li>
-                    <li id="Social"><a href="#" >feeling<br />SOCIAL</a></li>
+                    <li id="Social"><a href="#" >feeling<br />SOCIAL</a></li>-->
 				</ul>
         </div>
     </div>

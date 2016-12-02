@@ -64,7 +64,7 @@ $("#account .storyBtn").click(function()
 });
         
     
-$("#faqs").click(function (){
+$(".FAQs").click(function (){
     
      window.location.href = "FAQs";
 });
@@ -333,17 +333,12 @@ var Loved = ["Marriage", "Honeymoon", "Anniversary Gifts"];
 //    });    
     
 
-//Home Page Moods Selection    
-$(".feelingCircularMenu ul li").mouseenter(function(){
-  
-     moodId = $(this).attr("id");
-    
-    var moodImgName = moodId.toUpperCase();
-    
-    var cirColor;
+	function moodColorChange(moods){
+		
+		    var cirColor;
 
     
-     switch(moodId){
+     switch(moods){
                 
             case "Broke": 
                 
@@ -377,8 +372,19 @@ $(".feelingCircularMenu ul li").mouseenter(function(){
                 
         }
     
+		return cirColor;
+	}
+	
+//Home Page Moods Selection    
+$(".feelingCircularMenu ul li").mouseenter(function(){
+  
+     moodId = $(this).attr("id");
+    
+    var moodImgName = moodId.toUpperCase();
+    
+circleColor = 	moodColorChange(moodId);
 
-   $.ColorFill(cirColor);  
+   $.ColorFill(circleColor);  
 
 
     

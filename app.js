@@ -25,28 +25,83 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/faqs', faqs);
 
 
+var mood = [
+	{ name: 'Broke'},
+	{ name: 'Nerdy'},
+	{ name: 'Rich'},
+	{ name: 'Responsible'},
+	{ name: 'Loved'},
+	{ name: 'Social'}
+];
+
+
 app.get('/', function(req, res){
-  res.render('index.ejs');
+	
+
+	
+  res.render('index.ejs',{
+	  
+	  selectorDisplay: "hide",
+	  footerDisplay: "show",
+	  footerData1: "Blog",
+	  footerData2: "FAQs",
+	  moods: mood
+	  
+  });
 });
 
 app.get('/FAQs', function(req, res){
-  res.render('faqs.ejs');
+  res.render('faqs.ejs',{
+	  
+	  selectorDisplay: "show",
+	  	  footerDisplay: "show",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+	  
+  });
 });
 
 app.get('/Pricing', function(req, res){
-  res.render('howItWorks.ejs');
+  res.render('howItWorks.ejs', {
+	  
+	  	  selectorDisplay: "show",
+	  	  footerDisplay: "show",
+	  footerData1: "Video Tour",
+	  footerData2: "FAQs"
+  });
 });
 
 app.get('/KnowUs', function(req, res){
-  res.render('knowUs.ejs');
+  res.render('knowUs.ejs',{
+	  
+	  selectorDisplay: "show",
+	  	  footerDisplay: "show",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+	  
+	  
+  });
 });
 
 app.get('/GoalSelection', function(req, res){
-  res.render('mood.ejs');
+  res.render('mood.ejs',{
+	  
+	  	  selectorDisplay: "show",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
 });
 
 app.get('/YourStory', function(req, res){
-  res.render('yourStory.ejs');
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
 });
 
 // catch 404 and forward to error handler

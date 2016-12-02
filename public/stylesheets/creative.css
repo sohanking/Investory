@@ -35,6 +35,16 @@ body {
    
 }
 
+#show {
+	
+	display: block;
+}
+
+#hide {
+	
+	display: none;
+}
+
 /*
 
 #section1, #section2, #section3, #section4{

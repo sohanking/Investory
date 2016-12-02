@@ -99,7 +99,13 @@
       
     $.fn.transformPage = function(settings, pos, index) {
         
-       
+       			if(index == 4){
+					
+					$("navigation").hide();
+				}else{
+					
+					$("navigation").show();
+				}
                
              if(index == 1 && settings.logo ){
         settings.logo = false;
@@ -154,7 +160,7 @@
       index = $(settings.sectionContainer +".active").data("index");
       current = $(settings.sectionContainer + "[data-index='" + index + "']");
        
-
+		
         
       next = $(settings.sectionContainer + "[data-index='" + (index + 1) + "']");
       if(next.length < 1) {
@@ -458,6 +464,7 @@
     }
     return false;
   }
+
 
 
 }(window.jQuery);

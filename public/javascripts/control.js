@@ -44,7 +44,14 @@ $(".abc a").click(function(){
     
 });    
     
-  
+
+		$("#angle").click(function(){
+		
+	
+		 $(".main").moveDown();
+		
+	});
+	
     
 $(".wxt .storyBtn").click(function()
 {
@@ -286,17 +293,7 @@ var $loggedIn;
     
 var moodFile;
     
-//    if($loggedIn){
-//          $('.avatar').show();
-//          $('.login-btn > a').hide();
-//}else{
-//    
-//     $('.avatar').hide();  
-//     $('.login-btn > a').show();
-//$loggedIn = false;
-//}
-// 
-    
+
 //Goals
 var $GoalimgLink = "images/goals/"; 
     
@@ -315,22 +312,7 @@ var Loved = ["Marriage", "Honeymoon", "Anniversary Gifts"];
 
     
     
-//    $(".feelingCircularMenu ul li").on
-//    ({
-//        
-//        mouseenter: function() 
-//        {
-//            
-//            $(this).css("border-bottom","2px solid #35BFD3");
-//             $("a",this).css("color","#35BFD3");
-//        },         
-//        mouseleave: function()
-//        {
-//           $(this).css("border-bottom","2px solid rgba(53, 191, 211, 0)");
-//            $("a",this).css("color","#333");
-//        }
-//          
-//    });    
+
     
 
 	function moodColorChange(moods){
@@ -438,26 +420,11 @@ $(".moods .pagination li:nth-child(1) a").css({"background-color":"#FFDE15","col
     });
     
     
-    
-   
-    
-    $(".selectGoal ul li > a").click(function(){
-        
-       
-            moodId = $(this).attr("id");
-      var   goalId = $(this).attr("goal");
- 
-    var moodImgName = moodId.toUpperCase();
-    
-    $(".frogImageMoods img").attr("src", $imgLink+moodImgName+$imgExtension);
-    
-    $(".frogImageMoods h1").html($Feeling+" "+moodId);
-        
-        
-        
-         var local=[]; 
-    
-        switch(moodId){
+    function getGoals(moods){
+
+		  var local=[]; 
+		
+        switch(moods){
                 
             case "Broke": 
                 
@@ -491,8 +458,31 @@ $(".moods .pagination li:nth-child(1) a").css({"background-color":"#FFDE15","col
                 
         }
         
+		return local;
 
+	
+	}
+   
+    
+    $(".selectGoal ul li > a").click(function(){
         
+       
+            moodId = $(this).attr("id");
+      var   goalId = $(this).attr("goal");
+ 
+    var moodImgName = moodId.toUpperCase();
+    
+    $(".frogImageMoods img").attr("src", $imgLink+moodImgName+$imgExtension);
+    
+    $(".frogImageMoods h1").html($Feeling+" "+moodId);
+        
+        
+        
+       
+    
+          var local;
+		local = getGoals(moodId);
+		
          $(".below").empty();
         
         for(i=local.length-1; i>= 0; i--){
@@ -527,44 +517,9 @@ $(".moods .pagination li:nth-child(1) a").css({"background-color":"#FFDE15","col
         
         
         
-         var local=[]; 
-    
-        switch(moodId){
-                
-            case "Broke": 
-                
-                local=Broke.slice(0);
-                break;
-                
-             case "Nerdy": 
-               
-                local=Nerdy.slice(0);
-                break;
-                
-             case "Rich": 
-               
-                local=Rich.slice(0);
-                break;
-                
-             case "Responsible": 
-               
-                 local=Responsible.slice(0);
-                break;
-                
-            case "Loved": 
-               
-                local=Loved.slice(0);
-                break;
-                
-            case "Social": 
-               
-                local=Social.slice(0);
-                break;
-                
-        }
-        
-
-        
+          var local;
+		local = getGoals(moodId);
+		
          $(".below").empty();
         
         for(i=local.length-1; i>= 0; i--){
@@ -575,17 +530,7 @@ $(".moods .pagination li:nth-child(1) a").css({"background-color":"#FFDE15","col
         
     });
     
-//    $(".modal .login").click(function(){
-//        
-//       $('.avatar').show();
-//          $('.login-btn .login').hide();
-//         $('.modal').hide();
-//        
-//        $(".navbar .navbar-collapse").css("margin-left", "16.5%");
-//        
-//     $loggedIn = true;
-//    });
-    
+
         // Parse the URL
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -604,43 +549,9 @@ var source = getParameterByName('mood');
           $("#setMoodText").html($Feeling+" "+source);
 
             
-             var local=[]; 
-    
-        switch(source){
-                
-            case "Broke": 
-               
-                local=Broke.slice(0);
-                break;
-                
-             case "Nerdy": 
-               
-                local=Nerdy.slice(0);
-                break;
-                
-             case "Rich": 
-               
-                local=Rich.slice(0);
-                break;
-                
-             case "Responsible": 
-               
-                local=Responsible.slice(0);
-                break;
-                
-            case "Loved": 
-               
-                local=Loved.slice(0);
-                break;
-                
-            case "Social": 
-               
-                local=Social.slice(0);
-                break;
-                
-        }
-        
-
+      
+          var local;
+		local = getGoals(moodId);
         
          $(".below").empty();
         
@@ -669,57 +580,21 @@ function setFrogMood(mood){
   
     $(".moods .slider .change").click(function(){
 
-     var local=[]; 
+    
     var moodId = $(this).attr("id");
     
     var moodImgName = moodId.toUpperCase();
     
-        switch(moodId){
-                
-            case "Broke": 
-               
-                local=Broke.slice(0);
-                break;
-                
-             case "Nerdy": 
-               
-                local=Nerdy.slice(0);
-                break;
-                
-             case "Rich": 
-               
-                local=Rich.slice(0);
-                break;
-                
-             case "Responsible": 
-               
-                local=Responsible.slice(0);
-                break;
-                
-            case "Loved": 
-               
-                local=Loved.slice(0);
-                break;
-                
-            case "Social": 
-               
-                local=Social.slice(0);
-                break;
-                
-        }
-        
+      
+          var local;
+		local = getGoals(moodId);
+		
     $(".frogImageMoods img").attr("src", $imgLink+moodImgName+$imgExtension);
     
     $(".frogImageMoods h1").html($Feeling+" "+moodId);
         
          $(".below").empty();
-        
-//        for(i=local.length-1; i>= 0; i--){
-//            
-//               $(".below").append("<div class='goal'><img src='"+$GoalimgLink+moodId+"/"+local[i]+$imgExtension+"' mood="+moodId+" alt='Home view'><p id='mood'><span></span>"+local[i]+"</p></div>");
-//        }
-//        
-//  
+ 
               for(i=0; i < local.length; i++){
             
                $(".below").append("<div class='goal' id=''><img src='"+$GoalimgLink+moodId+"/"+local[i]+$imgExtension+"' mood="+moodId+" alt='Home view'><p id='mood'><span></span>"+local[i]+"</p></div>");
@@ -1005,80 +880,7 @@ var $smartGoals = "smartGoals";
      });
     
 
-//   imgClick = false;
-//    $(document).on("click", '.below .goal',function(){
-//        
-//          $("#mood span").css("background-color","#F2F5FB");
-//        
-//        $("#mood span",this).css("background-color","#FFDE15");
-//        
-//             var goalImg = $("#mood",this).text(); 
-//     var currentMood = $("img", this).attr("mood");
-//        var currentImg =  $("img", this).attr("src");
-//       
-//        
-//        $("img", this).attr("src",   $GoalimgLink+currentMood+"/"+goalImg+$onHover+$imgExtension);
-//            imgClick = true;
-//       
-//moodFile =  $("#mood",this).text(); 
-//    });
-    
-//        $(document).on("mouseleave", '.below .goal',function(){
-//        
-//         var goalImg = $("#mood",this).text(); 
-//     var currentMood = $("img", this).attr("mood");
-//        var currentImg =  $("img", this).attr("src");
-//            
-//        $("img", this).attr("src",   $GoalimgLink+currentMood+"/"+goalImg+$onHover+$imgExtension);
-//    });
-    
-//     $(".below .goal")
-//        .on
-//    ({
-//        
-//        mouseenter: function() 
-//        {
-//             
-//      var goalImg = $("#mood",this).text(); 
-//     var currentMood = $("img", this).attr("mood");
-//        var currentImg =  $("img", this).attr("src");
-//            
-//        $("img", this).attr("src",   $GoalimgLink+currentMood+"/"+goalImg+$onHover+$imgExtension);
-//            
-//
-//        },         
-//        mouseleave: function()
-//        {
-//         
-//      var goalImg = $("#mood",this).text(); 
-//     var currentMood = $("img", this).attr("mood");
-//        var currentImg =  $("img", this).attr("src");
-//            
-//        $("img", this).attr("src",   $GoalimgLink+currentMood+"/"+goalImg+$imgExtension);
-//           
-//        }
-//
-//      ,
-//        
-//        click: function()
-//        {
-//              $("#mood span").css("background-color","#F2F5FB");
-//        
-//        $("#mood span",this).css("background-color","#FFDE15");
-//        
-////             var goalImg = $("#mood",this).text(); 
-////     var currentMood = $("img", this).attr("mood");
-////        var currentImg =  $("img", this).attr("src");
-////            
-////        $("img", this).attr("src",   $GoalimgLink+currentMood+"/"+goalImg+$onHover+$imgExtension);
-////            imgClick = true;
-////       
-//moodFile =  $("#mood",this).text(); 
-//         
-//        }
-//          
-//    });
-      
+
  $(".contentMood .page2, #goalIndicator, .contentMood .page4, .contentMood .page5").hide();
     
 
@@ -1207,21 +1009,3 @@ function resizeContent() {
    
 }
 
-
-//$("body").on("keydown", function(e){
-//    
-//    if(e.keyCode === 38) {
-//        // up
-//      
-//     $('html, body').animate({scrollTop: -height}, 800);
-//      
-//       
-//    }
-//    else if(e.keyCode === 40) {
-//        // down
-//       
-//      $('html, body').animate({scrollTop: height}, 800);       
-//    }
-//   
-//    
-//});

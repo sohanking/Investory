@@ -250,7 +250,8 @@ text-decoration: underline;
 .navbar .navbar-collapse {
     
     text-align: center;
-    margin-left: 9%;
+  
+	    margin-left: 24%;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -385,10 +386,10 @@ Home Page Whats your mood.
 -----------------------------------------------------------------------------------------
 */
 
+
+
 .yourMood {
-    
-    margin-top: 16em;
-       
+    margin-top: 32em;
 }
 
 .yourMood > h1 {
@@ -428,7 +429,7 @@ What we offer
 .how-it-works,
 .why-us {
      
-     margin-top: 4%;
+	    margin-top: 10%;
 }
 
 .what-we-offer h2,
@@ -441,6 +442,8 @@ What we offer
     color: #35BFD3;
     margin-top: 0;
     margin-bottom: 0;
+	font-size: 3em;
+
 }
 
 .what-we-offer .tuff{
@@ -460,80 +463,21 @@ What we offer
 }
 
 
-.what-we-offer > .row,
-.how-it-works > .row {
-    
-    padding-left: 20em;
-    padding-right: 20em;
-     margin-bottom: 4%;
-    margin-top: 2%;
+
+
+.what-we-offer > .row, .how-it-works > .row {
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-bottom: 4%;
+    margin-top: 10%;
 }
 
-.what-we-offer > .row > .column,
-.how-it-works > .row > .column {
-   
-    padding: 0 8px;
+.what-we-offer > .row div > img, .how-it-works > .row div > img{
+	
+	display: block;
+	margin: auto;
 }
 
-.what-we-offer > .row > .column > p,
-.how-it-works > .row > .column > p{
-    cursor: pointer;
-     font-weight: 600;
-    font-size: 1.1em;
-    
-}
-.what-we-offer > .row:after,
-.how-it-works  > .row:after {
-    
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
-   
-    float: left;
-    width: 25%;
-
-}
-
-.what-we-offer .column > img {
-    
-    cursor: pointer;
-    padding-bottom: 3%;
-}
-
-.smart-goals > p {
-    
-    position: relative;
-    left: -2em;
-}
-
-.build-wealth {
-    
-    position: relative;
-    top: 5em;
-}
-
-.build-wealth > img {
-   
-    position: relative;
-    top: -1em;
-}
-
-.tax-savings,
-.emergency-funds {
-    
-    position: relative;
-    top: 3em;
-}
-
-.tax-savings > img,
-.emergency-funds > img {
-    
-    position: relative;
-    top: -1em;
-}
 
 .changeFoot {
     
@@ -1081,23 +1025,23 @@ Bottom menu dots and arrow down
     
 }
 
-#angle{
 
-    position: absolute;
-    left: 47em;
+
+#angle {
+    position: fixed;
+        left: 27.4em;
     bottom: 1em;
     width: 28px;
     height: 12px;
-     z-index: 99999;
- 
-    
+    z-index: 99999;
 }
 
+
+
 #dotMenu {
-    
-    position: absolute;
+    position: fixed;
     bottom: 2.5em;
-    left: 44.6em;
+     left: 24.7em;
     width: 100px;
     z-index: 99999;
 }
@@ -1116,9 +1060,9 @@ Bottom menu dots and arrow down
 
 .menu {
    
-    position: absolute;
+    position: fixed;
     bottom: 0em;
-    left: 35em;
+    left: 15em;
      z-index: 6;
 }
 
@@ -2686,4 +2630,66 @@ img.WInvstImg{
 }
 h2.WSHeader{
     padding-bottom: 0px;
+}
+
+
+
+/*Responsive mobile First Design*/
+
+@media only screen and (min-width: 769px) {
+
+	.navbar .navbar-collapse {
+
+	    margin-left: 9%;
+}
+	
+
+.what-we-offer,
+.how-it-works,
+.why-us {
+     
+	    margin-top: 4%;
+}
+
+	.what-we-offer h2,
+.how-it-works h2,
+.know-us h2,
+.why-us > h2{
+    
+
+	font-size: 2em;
+
+}
+
+	
+	.what-we-offer > .row, .how-it-works > .row {
+
+    margin-top: 0%;
+}
+	
+	.yourMood {
+    
+    margin-top: 16em;
+       
+}
+	
+	#dotMenu {
+    
+
+    left: 44.6em;
+  
+}
+	
+	#angle{
+
+    left: 47em;
+
+    
+}
+	.menu {
+   
+    left: 35em;
+    
+}
+	
 }

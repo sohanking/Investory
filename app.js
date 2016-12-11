@@ -42,6 +42,8 @@ app.get('/', function(req, res){
   res.render('index.ejs',{
 	  
 	  selectorDisplay: "hide",
+	  	loggedIn: "hide",
+	  		hideLoginModal: "show",
 	  footerDisplay: "show",
 	  footerData1: "Blog",
 	  footerData2: "FAQs",
@@ -54,6 +56,8 @@ app.get('/FAQs', function(req, res){
   res.render('faqs.ejs',{
 	  
 	  selectorDisplay: "show",
+	  	loggedIn: "hide",
+	  		hideLoginModal: "show",
 	  	  footerDisplay: "show",
 	  footerData1: "Blog",
 	  footerData2: "FAQs"
@@ -65,6 +69,8 @@ app.get('/Pricing', function(req, res){
   res.render('howItWorks.ejs', {
 	  
 	  	  selectorDisplay: "show",
+	  	loggedIn: "hide",
+	  		hideLoginModal: "show",
 	  	  footerDisplay: "show",
 	  footerData1: "Video Tour",
 	  footerData2: "FAQs"
@@ -75,6 +81,8 @@ app.get('/KnowUs', function(req, res){
   res.render('knowUs.ejs',{
 	  
 	  selectorDisplay: "show",
+	  	loggedIn: "hide",
+	  		hideLoginModal: "show",
 	  	  footerDisplay: "show",
 	  footerData1: "Blog",
 	  footerData2: "FAQs"
@@ -87,6 +95,8 @@ app.get('/GoalSelection', function(req, res){
   res.render('mood.ejs',{
 	  
 	  	  selectorDisplay: "show",
+	  	loggedIn: "hide",
+	  		hideLoginModal: "show",
 	  	  footerDisplay: "hide",
 	  footerData1: "Blog",
 	  footerData2: "FAQs"
@@ -98,11 +108,43 @@ app.get('/YourStory', function(req, res){
 	  
 	  
 	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'profileData',
+	  		hideLoginModal: "hide",
 	  	  footerDisplay: "hide",
 	  footerData1: "Blog",
 	  footerData2: "FAQs"
   });
 });
+
+app.get('/profile', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "hide",
+	  	path:'profileData',
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
+app.get('/myStory', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'myStoryData',
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

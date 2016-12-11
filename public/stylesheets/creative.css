@@ -466,10 +466,10 @@ What we offer
 
 
 .what-we-offer > .row, .how-it-works > .row {
-    padding-left: 8em;
+ /*   padding-left: 8em;
     padding-right: 8em;
     margin-bottom: 4%;
-    margin-top: 10%;
+    margin-top: 10%;*/
 }
 
 .what-we-offer > .row div > img, .how-it-works > .row div > img{
@@ -568,8 +568,12 @@ margin-top: 0.9em;
     
         position: relative;
     left: 27%;
+	 
 }
-
+.topNav {
+	    z-index: 1030;
+	top: 9em;
+}
 
 .page4 .dotHr div{
     

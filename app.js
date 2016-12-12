@@ -34,6 +34,16 @@ var mood = [
 	{ name: 'Social'}
 ];
 
+var navActive = [
+	
+	{ mStoryAct: ''},
+	{ reportsAct: ''},
+	{ myProfileAct: ''},
+	{ accountAct: ''},
+	{ messagesAct: ''}
+	
+	
+]
 
 app.get('/', function(req, res){
 	
@@ -104,6 +114,9 @@ app.get('/GoalSelection', function(req, res){
 });
 
 app.get('/YourStory', function(req, res){
+	
+
+	
   res.render('yourStory.ejs',{
 	  
 	  
@@ -124,6 +137,7 @@ app.get('/profile', function(req, res){
 	  	  selectorDisplay: "show",
 	  		loggedIn: "hide",
 	  	path:'profileData',
+
 	  		hideLoginModal: "hide",
 	  	  footerDisplay: "hide",
 	  footerData1: "Blog",
@@ -138,12 +152,78 @@ app.get('/myStory', function(req, res){
 	  	  selectorDisplay: "show",
 	  		loggedIn: "show",
 	  path:'myStoryData',
+	
 	  		hideLoginModal: "hide",
 	  	  footerDisplay: "hide",
 	  footerData1: "Blog",
 	  footerData2: "FAQs"
   });
 });
+
+app.get('/reports', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'reportsData',
+	
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
+
+app.get('/Accounts', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'accountData',
+	  path1: 'accountInvoicesData',
+	
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
+app.get('/Invoices', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'accountData',
+	  path1: 'accountInvoicesData',
+	
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
+app.get('/Settings', function(req, res){
+  res.render('yourStory.ejs',{
+	  
+	  
+	  	  selectorDisplay: "show",
+	  		loggedIn: "show",
+	  path:'accountData',
+	  path1: 'accountSettingsData',
+	
+	  		hideLoginModal: "hide",
+	  	  footerDisplay: "hide",
+	  footerData1: "Blog",
+	  footerData2: "FAQs"
+  });
+});
+
 
 
 // catch 404 and forward to error handler

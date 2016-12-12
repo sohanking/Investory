@@ -3,10 +3,14 @@
 
 <% if(path == "profileData"){ %>
  	<%  include profileData %>
- <% } if(path == "myStoryData"){ %>
+ <% }else if(path == "myStoryData"){ %>
  	 <% include myStoryData %>
- <%  } else{  %>
- 	  <% include profileData %>
+ <%  } else if(path == "accountData"){  %>
+ 	  <% include accountData %>
+ <% }else if(path == "reportsData"){ %>
+ 	 <% include reportsData %>
+<% } else { %>
+<% include profileData %>
 <% } %>
 
 </div>

@@ -1112,6 +1112,198 @@ body.panelBodyCut{
 
 
 
+#reports .upgrade{
+    position: relative;
+    top: -3.5em;
+    left: 1em;
+
+
+   
+}
+
+#reports td.corrupt{
+        border-radius: 0em;
+    
+}
+button#menu1.btn.btn.btn-primary.dropdown-toggle.selectReport{
+   color: #333333;
+    background-color: #F2F5FB;
+    border-color: #333333;
+   border-radius: 10px;
+    height:2em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight:900;
+}
+#reports .upgrade{
+    position: relative;
+    top: -3.5em;
+left: 4em;
+
+
+   
+}
+
+button.btn.btn-sm.moodNav.signUp.giveUp1{
+    font-weight:800;
+    font-size:1em;
+     width: 8em;
+    margin-bottom:0.8em;
+    border-radius:10px;
+    margin-right: 1em;/*added*/
+
+}
+button.btn.btn-sm.moodNav.signUp.gaveUp1{
+    font-weight:bolder;
+    font-size:1em;
+     width: 5em;
+    margin-bottom:0.8em;
+    border-radius:10px;
+    margin-right: 1em;/*added*/
+
+}
+
+#reports td.corrupt{
+        border-radius: 0em;
+    
+}
+
+
+.scrollbar{
+    width:72em;
+  height:17.4em;/*added*/
+    overflow:auto;
+    overflow-x: hidden;
+    margin-top: 0em;
+     }
+
+#reports div.panel-body.panelBodyCut{
+    padding:5px;
+        height: 17em;
+}
+
+#reports h4.paint{
+   margin-top:0px;
+        margin-bottom: 5px;  color:#35BFD3;font-weight:800;
+}
+
+
+
+#reports
+{
+    margin-left: 36px;
+    margin-bottom: 14px
+}
+#reports .classy{
+   font-weight: 800;
+    color: black;
+}
+#reports div#myProgress {
+ left:3.5em;width:5em;
+    
+}
+
+#reports div#myBar {
+  color: #FFDE15;width:50%; position: absolute;
+                                width:50%;height: 100%; background-color:#FFDE15; border-radius: 10px;
+}
+
+
+
+#reports div.row.panelRow.scroll{
+   
+    width:92em;margin-top:0px;height:1em;
+}
+#reports div.text-center{
+    height:2.5em;
+}
+
+
+/*added*/
+div.btnCenterReport1{
+        position: absolute;
+    top: 68%;
+    left: 41%;
+}
+/*added*/
+div.btnCenterReport2{
+        position: absolute;
+    top: 72%;
+    left: 44%;
+}
+
+#report h4.paint{
+    margin-top:0px;
+        margin-bottom: 5px;
+}
+
+#report div.paint{
+    color:#35BFD3;
+  
+}
+
+#reports
+{
+    margin-left: 36px;
+    margin-bottom: 14px
+}
+#report .classy{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-weight:bold;
+}
+#report div#myProgress {
+  position: relative;
+  width: 10%;
+  height: 100%;
+  background-color:#35BFD3;
+    margin-left:50%;
+     border-radius: 10px;
+    
+}
+
+#report div#myBar {
+  position: absolute;
+  width:50%;
+  height: 100%;
+  background-color:#FFDE15;    
+ border-radius: 10px;
+}
+#reports div.text-center{
+    height:2.5em;
+    margin-top: 0px;/*added*/
+}
+
+
+#report div.row.panelRow.scroll{
+    
+    width: 50em;
+}
+
+
+
+#reports .upgrade{
+        position: absolute;
+    top: 16.7%;
+    left: 51.5%;
+width: 6em;
+    border-radius: 10px;
+
+
+   
+}
+
+#reports td.corrupt{
+        border-radius: 0em;
+    
+}
+
+#reports div.text-center {
+    align-content: center;
+}
+
+
+
 
 /*
 -----------------------------------------------------------------------------------------

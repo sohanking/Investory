@@ -45,31 +45,31 @@ $(".abc a").click(function(){
 });    
     
 
-		$("#angle").click(function(){
-		
-	
-		 $(".main").moveDown();
-		
-	});
-	
-    
-$(".wxt .storyBtn").click(function()
-{
-    
-    $(".wxt .storyBtn").removeClass("act");
-    $(this).addClass("act");
-    
-});
-  
-    
-$("#account .storyBtn").click(function()
-{
-    
-    $("#account .storyBtn").removeClass("act");
-    $(this).addClass("act");
-    
-});
-        
+//		$("#angle").click(function(){
+//		
+//	
+//		 $(".main").moveDown();
+//		
+//	});
+//	
+//    
+//$(".wxt .storyBtn").click(function()
+//{
+//    
+//    $(".wxt .storyBtn").removeClass("act");
+//    $(this).addClass("act");
+//    
+//});
+//  
+//    
+//$("#account .storyBtn").click(function()
+//{
+//    
+//    $("#account .storyBtn").removeClass("act");
+//    $(this).addClass("act");
+//    
+//});
+//        
     
 $(".FAQs").click(function (){
     
